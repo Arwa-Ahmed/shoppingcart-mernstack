@@ -47,7 +47,7 @@ function App() {
           </header>
           <main className="main">
             <div className="content">
-              <Route exact path="/products" component={Products}/>
+              <Route exact path="/" component={Products}/>
               <Route path="/product/:id" component={Product} />
               <Route path="/cart/:id?" component={Cart}/>
             </div>
