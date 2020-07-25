@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www ",
+     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "client": "cd client && npm start",
     "dev":"concurrently -n './bin/www , client' \"nodemon ./bin/www\" \"npm run client\""
