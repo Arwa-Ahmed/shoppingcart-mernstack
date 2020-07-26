@@ -37,10 +37,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'productImage')))
 
 
-app.use('/', productsRouter);
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/order', orderRouter);
-//app.use('/products', productsRouter);
+app.use('/products', productsRouter);
 
 //deploy
 if (process.env.NODE_ENV == 'production') {
